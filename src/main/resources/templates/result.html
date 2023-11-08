@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+<div th:each="symbol : ${map}">
+    <p>
+        <label th:text="${symbol.key}"></label>:
+        <label th:text="${symbol.value}"></label>
+    </p>
+</div>
+</body>
+</html>
